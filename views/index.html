@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/public/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to </p>
+    <textarea id="textContainer"><%= title %></textarea>
+  </body>
+
+  <script src="/public/javascripts/jquery-3.2.1.min.js"></script>
+  <script>
+    var html = $('#textContainer').val();
+    console.log(html);
+    $('body').html(html);
+  </script>
+</html>
