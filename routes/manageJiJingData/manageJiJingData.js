@@ -20,7 +20,7 @@ manageJiJing.prototype.getJiJingListData = function(){
         });
 };
 
-var indexN = 0;
+var indexN = 100;
 manageJiJing.prototype.dealJiJingListData = function(data){
     var listData = data.match(/"(.+?)"/g);
     if(!!listData){
@@ -36,6 +36,7 @@ manageJiJing.prototype.dealJiJingListData = function(data){
         }
     }else{
         console.log("over");
+        this.getGuPiaoInfo(005387);
     }
 };
 
